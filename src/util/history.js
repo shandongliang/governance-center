@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.history=void 0;var _history=require("history"),history=(0,_history.createHashHistory)();exports.history=history;

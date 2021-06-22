@@ -1,0 +1,16 @@
+
+.pandora-form-row {
+  display: block;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.pandora-form-title {
+  display: inline-block;
+  font-weight: bold!important;
+  width: 60px;
+}
+
+.pandora-form-input {
+  display: inline-block;
+  width: 200px;
+}

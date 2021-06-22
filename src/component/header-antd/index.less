@@ -1,0 +1,79 @@
+@import "../../themes/vars.less";
+
+@prefixCls: pandora-header-antd;
+:global{
+
+.pandora-header-antd {
+	background:@pandoraHeaderAntdBgColor;
+	padding:0;
+	height:@pandoraHeaderHeight;
+	line-height:@pandoraHeaderHeight;
+	box-shadow: @shadow-2;
+	position: fixed;
+	top: 0px;
+	z-index: 99;
+}
+
+.pandora-header-antd .ant-menu-horizontal {
+	border: none;
+	display: inline-block;
+}
+
+.pandora-header-antd .ant-menu-horizontal > .ant-menu-submenu {
+	float: right;
+}
+
+.pandora-header-antd .pandora-toggle {
+	float:left;
+	width:45px;
+	height:@pandoraHeaderHeight;
+	line-height:@pandoraHeaderHeight;
+	text-align:center;
+	font-size:@pandoraToggleBtnFontSize;
+	cursor:pointer;
+	transition: @transition-ease-out;
+}
+
+.pandora-header-antd .pandora-settings .user-avatar.ant-avatar {
+	margin-right:10px;
+}
+
+}
+
+// 关闭 css modules
+
+
+.pandora-header-antd {
+	background:@pandoraHeaderAntdBgColor;
+	padding:0;
+	height:@pandoraHeaderHeight;
+	line-height:@pandoraHeaderHeight;
+	box-shadow: @shadow-2;
+	position: fixed;
+	top: 0px;
+	z-index: 99;
+}
+
+.pandora-header-antd .ant-menu-horizontal {
+	border: none;
+	display: inline-block;
+}
+
+.pandora-header-antd .ant-menu-horizontal > .ant-menu-submenu {
+	float: right;
+}
+
+.pandora-header-antd .pandora-toggle {
+	float:left;
+	width:45px;
+	height:@pandoraHeaderHeight;
+	line-height:@pandoraHeaderHeight;
+	text-align:center;
+	font-size:@pandoraToggleBtnFontSize;
+	cursor:pointer;
+	transition: @transition-ease-out;
+}
+
+.pandora-header-antd .pandora-settings .user-avatar.ant-avatar {
+	margin-right:10px;
+}

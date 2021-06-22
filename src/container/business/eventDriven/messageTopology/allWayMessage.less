@@ -1,0 +1,168 @@
+
+// .allWayMessageDetail{
+//     // width: 800px;
+    
+    
+//     .businesstable {
+//         margin-top: 30px;
+//         border: 1px solid red;
+//     }
+   
+// }
+.allWayMessage{
+    .treemap{
+        outline: 1px solid red;
+    }
+    .greenLine{
+        border: 1px solid green;
+        display: inline-block;
+        width: 60px;
+    }
+    .redLine{
+        margin-left: 15px;
+        border: 1px solid red;
+        display: inline-block;
+        width: 60px;
+    }
+    .greenCircle{
+        margin-left: 15px;
+        border: 1px solid green;
+        display: inline-block;
+        width: 8px;
+        height:8px;
+        border-radius:5px;
+    }
+    .grayCircle{
+        margin-left: 15px;
+        border: 1px solid #c0c0c0;
+        display: inline-block;
+        width: 8px;
+        height:8px;
+        border-radius:5px;
+    }
+}
+.businesskeyDetail{
+    .businesstable{
+        margin:30px 0;
+        border-collapse:collapse; 
+        .businessProducer{
+           
+                width: 280px;
+                height: 50px;
+                text-align: center;
+                border: 1px solid #244956;
+                vertical-align: middle;
+          
+        }
+        .businessConsumer{
+                    width: 730px;
+                    height: 50px;
+                    border: 1px solid #244956;
+                    .consumerhead{
+                       
+                       float:left;
+                       width: 40%;
+                       height: 50px;
+                       display: flex;
+                       justify-content:center;
+                       align-items: center; 
+                       border-right:1px solid #244956;
+                    }
+                    .consumerDetailhead{
+                        float:left;
+                       width: 60%;
+                       height: 50px;
+                       display: flex;
+                       justify-content:center;
+                       align-items: center; 
+                    }
+                    
+        }
+        .businessProducerContent{
+            border: 1px solid #244956;
+          
+            min-height: 130px;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .businessConsumerContent{
+            width: 600px;
+            min-height: 130px;
+            border: 1px solid #244956;
+            .businessElem{
+                overflow: hidden;
+                border-bottom:1px solid #244956;
+                .left{
+                    width: 40%;
+                    float :left;
+                    overflow: hidden;
+                    // border: 1px solid #244956;
+                    // border-top: 1px solid transparent;
+                    // border-bottom:1px solid transparent;
+                    height: 92px;
+                    line-height: 92px;
+                    position: relative;
+                    text-align: left;
+                    padding-left: 20px;
+                    .contentL{
+                        width: 100%;
+                        line-height: 22px;
+                        position: absolute;
+                        top: 50%;
+                      
+                        transform: translate(-0%,-50%);
+                        p{
+                            width: 100%;
+                        }
+                    }
+                }
+                .right{
+                    width: 60%;
+                    float:left;
+                    overflow: hidden;
+                    // border: 1px solid #244956;
+                    // border-top: 1px solid transparent;
+                    // border-bottom:1px solid transparent;
+                    height: 92px;
+                    line-height: 92px;
+                    //text-align: center;
+                    position: relative;
+                    text-align: left;
+                    padding-left: 20px;
+                    .contentR{
+                        width: 100%;
+                        line-height: 15px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-0%,-50%);
+                        a{
+                            padding-left: 5px;
+                        }
+                        p{
+                            width: 100%;
+                        }
+                    }
+                }
+                
+                
+            }
+            .businessElem:last-child{
+              border-bottom:1px solid transparent;
+            }
+        }
+       
+    }
+    .businessColor{
+       
+        color: rgb(16, 142, 233);
+        font-style: normal;
+    }
+    .businessTitle{
+        padding: 10px 20px;
+        border: 1px solid #747481;
+        border-radius: 5px;
+    }
+}
+.businesskeyDetail.ant-modal {
+    width: 1050px !important;
+}

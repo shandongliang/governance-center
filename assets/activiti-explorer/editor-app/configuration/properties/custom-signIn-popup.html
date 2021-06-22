@@ -1,0 +1,24 @@
+<div class="modal" ng-controller="CustomSignInPopupCtrl">
+    <div class="modal-dialog modal-wide">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">&times;</button>
+                <h2>{{'PROPERTY.PROPERTY.EDIT.TITLE' | translate:property}}</h2>
+            </div>
+            <div class="modal-body">
+
+                <div class="pandora-form-row">
+                    <span class="pandora-form-title">orgId:</span>
+                    <input class="pandora-form-input" id="orgIdField" ng-model="signIn.orgId" />
+                </div>
+                <div class="pandora-form-row">
+                    <span class="pandora-form-title">type:</span>
+                    <input class="pandora-form-input" id="typeField" ng-model="signIn.type" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button ng-disabled="state.subprocessError" ng-click="save()" class="btn btn-primary" translate>ACTION.SAVE</button>
+            </div>
+        </div>
+    </div>
+</div>

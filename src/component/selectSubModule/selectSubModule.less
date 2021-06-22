@@ -1,0 +1,55 @@
+/*loading动画*/
+@width: 1em;
+@height: 1em;
+@border: 2px;
+@padding: 10px;
+.tierForm{
+    .ant-form-item{
+        margin-bottom: 10px;
+    }
+    .loadingDIY{
+        position: relative;
+        top: -5px;
+        height: 14px;
+        line-height: 14px;
+        .ant-form-item{
+            overflow: hidden;
+            height: 14px;
+        }
+        div{
+            .loadingImage{
+                display: inline-block;
+                width: @width;
+                height: @height;
+                border: @border solid #fff;
+                border-right: @border solid #666;
+                border-radius: 50%;
+                animation: loadingCircle 1s infinite linear;
+            }
+            .loadingText{
+                color: #666;
+                padding: 0 @padding;
+                animation: changeText 2s infinite linear;
+            }
+        }
+    }
+}
+
+
+
+@keyframes loadingCircle {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes changeText {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}

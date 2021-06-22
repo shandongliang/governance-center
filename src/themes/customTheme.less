@@ -1,0 +1,138 @@
+/****** 此文件为：pandora自定义web主题，pandora1.7.1-SNAPSHOT新增，各项目组可根据各自需求进行修改如下的变量值（变量名不可修改!!!）  ******/
+
+@import "./pandoraTheme.less";
+@pandoraFontSize:12px;
+
+/**************************  Layout部分  ********************************/
+
+
+// Content组件（用来存放子组件的容器）的背景色、margin、padding
+@pandoraContentBgColor:#fff;
+@pandoraContentMargin:18px;
+@pandoraContentPadding:16px;
+@pandoraContentBorderRadius:10px;
+
+// 左侧侧边栏（Slider组件）的背景色 (应与 父级菜单 的颜色保持一致)
+@pandoraSliderBgColor:#fff;
+@pandoraSliderDarkBgColor:#1e8fd1;
+@pandoraSliderDarkFontColor:#fff;
+//Layout最底层的背景色
+@pandoraLayoutBgColor:#f5f9fa;
+
+
+/**************************  Meu部分(dark)  ********************************/
+// 父级菜单颜色
+@pandoraParentMenuFontColor:#fff;
+@pandoraParentMenuBgColor:#1e8fd1;
+
+// 子菜单背景色
+@pandoraSubMenuBgColor:#1e8fd1;
+
+// 子菜单文字颜色
+@pandoraSubMenuFontColor:#fff;
+
+// 菜单字号
+@pandoraMenuFontSize:12px;
+
+// 菜单被选中时的颜色
+@pandoraSelectedMenuBgColor:#0f6ca2;
+@pandoraSelectedMenuFontColor:#7dc5ff;
+
+// 鼠标滑过 子菜单 时的颜色
+@pandoraHoverSubMenuFontColor:#7dc5ff;
+
+// 鼠标滑过父级菜单时文字颜色 及 子菜单被选中时，其父级菜单的颜色
+@pandoraHoverParentMenuFontColor:#7dc5ff;
+
+// Pandora 新增了深色主题时，选中的菜单有左边框、右边框，不想展示该边框可将边框大小设置为0px：
+// 右边框
+@pandoraSelectedMenuBorderRightSize:0px;
+@pandoraSelectedMenuBorderRightColor:#40cbff;
+// 左边框
+@pandoraSelectedMenuBorderLeftSize:3px;
+@pandoraSelectedMenuBorderLeftColor:#40cbff;
+
+// 菜单（dark）中的滚动条颜色
+@pandoraMenuScrollbarBgColor:#62b1df;
+// 菜单搜索框
+@pandoraSearchMenuDefaultColor:rgba(255, 255, 255, 0.26);
+@pandoraSearchMenuHoverColor:#fff;
+@pandoraSearchMenuDefaultBorColor:rgba(255, 255, 255, 0.26);
+@pandoraSearchMenuHoverBorColor:#7dc5ff;
+@pandoraSearchMenuDefaultBgColor:#5fb7ff;
+@pandoraSearchMenuHoverBgColor:#7dc5ff;
+
+
+
+/**************************  Header部分  ********************************/
+
+
+// header背景色
+@pandoraHeaderAntdBgColor:#f5f9fa;
+
+// header高度
+@pandoraHeaderHeight:64px;
+
+/**************************  LOGO部分 （来自：app.less）  ********************************/
+
+
+// LOGO下面的背景图（路径为：当前文件到背景图所在文件夹的相对路径）
+@pandoraLogoDarkBg:@pandoraParentMenuBgColor url("./../../assets/images/logo_bg.png") no-repeat;
+
+@pandoraLogoLightBg:#fff;
+// LOGO下面的背景图大小（background-size）
+@pandoraLogoBgSize:224px 66px;
+
+// 通过paddingTop、paddingBottom调整LOGO下面的背景图所在盒子的高度
+@pandoraLogoBgPadding:10px 0 19px 0;
+
+// Logo父元素的高度（类名为nav-logo元素）
+@pandoraLogoContainerHeight:37px;
+
+// Logo的大小
+@pandoraLogoHeight:32px;
+@pandoraLogoWidth:32px;
+
+// 项目名称大小，若项目名称使用图片来展示可以自行改变图片的宽高（@pandoraProjectNameHeight + 2倍@pandoraProjectNameMargin = @pandoraLogoHeight），若使用文字，无需更改如下变量的值
+@pandoraProjectNameWidth:86px;
+@pandoraProjectNameHeight:37px;
+@pandoraProjectNameMargin:0px;
+
+// 项目名称是否使用渐变
+@pandoraProjectNameBg: true;
+// 项目名称渐变样式
+.text-bg(@pandoraProjectNameBg) when(@pandoraProjectNameBg) {
+  background-image: linear-gradient(131deg,#0f6ca2,#1e8fd1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+// 项目名称渐变样式-浅色主题
+.text-bg-light(@pandoraProjectNameBg) when(@pandoraProjectNameBg) {
+  background-image: -webkit-linear-gradient(41deg,#0074d9,#65c7d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// 项目名称文字样式
+@pandoraProjectNameWeight: 900;
+@pandoraProjectNameColor: rgba(255, 255, 255, 0.85);
+@pandoraProjectNameFontFamily: Arial,"Lucida Grande","Helvetica Neue",Helvetica,"Microsoft YaHei",sans-serif;
+@pandoraProjectNameFontSize: 18px;
+
+
+/**************************  多页签 部分 tab-nav/index.less）  ********************************/
+// 多页签颜色--非选中状态颜色
+@pandoraTabnavDefaultBgColor:#fff;
+@pandoraTabnavDefaultBdrColor:#d8dce5;
+@pandoraTabnavDefaultFtColor:#495060;
+
+// 多页签颜色--选中状态颜色
+@pandoraTabnavSelectedBgColor:#108ee9;
+@pandoraTabnavSelectedBdrColor:#108ee9;
+@pandoraTabnavSelectedFtColor:#fff;
+// 多页签字号
+@pandoraTabnavFontSize:12px;
+// header切换菜单收起展开的按钮字体图标大小
+@pandoraToggleBtnFontSize:18px;
+
+
